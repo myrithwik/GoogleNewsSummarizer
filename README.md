@@ -26,6 +26,7 @@ In a world where information overload is constant, this tool delivers the news s
 ```bash
 git clone https://github.com/myrithwik/GoogleNewsSummarizer.git
 cd GoogleNewsSummarizer
+```
 
 ### 2. Create and activate a virtual environment
 ```bash
@@ -66,6 +67,7 @@ crontab -e
 Add a line like this to run every day at 8 AM:
 ```
 0 8 * * * /path/to/venv/bin/python /path/to/GoogleNewsSummarizer/google_news_scraper.py
+```
 
 ### 📊 Usage Diagram
 
