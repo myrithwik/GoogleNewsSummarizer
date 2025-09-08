@@ -1,0 +1,22 @@
+#Virtual Environment
+news_agent/
+
+#Byte Compiled Files
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+#Logs
+*.log
+
+#Open AI API
+openai_api.py
+
+# IDE/project settings
+.vscode/
+.idea/
+*.swp
+
+# Mac system files
+.DS_Store
