@@ -4,8 +4,8 @@ import requests
 from playwright.sync_api import sync_playwright
 import json
 from bs4 import BeautifulSoup
-from summary_agent import summarize_article
-from email_news import build_email_body, send_email
+from utils.summary_agent import summarize_article
+from utils.email_news import build_email_body, send_email
 import argparse
 
 #import nltk
@@ -83,8 +83,7 @@ for entry in feed.entries:
         article.parse()
 
         article_text = article.text
-        article_summary = "summary"
-        #article_summary = summarize_article(article_text)
+        article_summary = summarize_article(article_text)
 
         articles.append({
             "title": entry.title,
